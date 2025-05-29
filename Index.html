@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios SST Profesionales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    section:nth-of-type(even) {
+      background-color: #f1f5f9;
+    }
+    section h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .banner {
+      position: relative;
+      color: white;
+    }
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    .banner * {
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    }
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8a6c98d0c0?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+    }
+    .banner p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background-color: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: linear-gradient(to right, #2c3e50, #3498db); color: #fff; padding: 2rem; text-align: center; }
+    nav { background-color: #1f1f1f; display: flex; justify-content: center; padding: 1rem; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #3498db; }
+    section { padding: 2rem; max-width: 1200px; margin: auto; }
+    h2 { margin-bottom: 1rem; color: #2c3e50; }
+    .grid-servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .servicio-box {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .servicio-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .servicio-box i {
+      color: #27ae60;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    .servicio-box h3 {
+      font-size: 1.1rem;
+      color: #2c3e50;
+      margin-top: 0.5rem;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 1rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      nav { flex-direction: column; }
+      nav a { margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="logo_daniel_sst.png" alt="Logo Daniel Perea SST" style="max-width: 200px; height: auto;">
+</div>
+
+<div class="banner">
+  <h1>Servicios Profesionales en Seguridad y Salud en el Trabajo</h1>
+  <p>Soluciones en SST con impacto real y cumplimiento legal garantizado.</p>
+</div>
+<nav>
+  <a href="#servicios">Servicios</a>
+  <a href="#paquetes">Paquetes</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="servicios">
+  <h2>Servicios Profesionales en SST</h2>
+  <div class="grid-servicios">
+
+    <div class="servicio-box"><i class="fas fa-clipboard-check"></i>
+      <h3>Diagnóstico Inicial del SG-SST</h3>
+      <p>Evaluación del estado actual del Sistema de Gestión en SST, con informe de hallazgos y recomendaciones.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-calendar-alt"></i>
+      <h3>Plan de Trabajo Anual</h3>
+      <p>Diseño del plan con cronogramas, responsables y metas conforme a la normatividad vigente.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-chalkboard-teacher"></i>
+      <h3>Capacitaciones y Charlas</h3>
+      <p>Formación en SST, uso de EPP, pausas activas, COPASST, CCL, entre otros. Modalidad presencial o virtual.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-book"></i>
+      <h3>Documentación Legal</h3>
+      <p>Creación y actualización de políticas, manuales, formatos, y soportes del SG-SST.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-users"></i>
+      <h3>Formación de Brigadas</h3>
+      <p>Organización y entrenamiento básico en primeros auxilios, evacuación e incendios.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-search"></i>
+      <h3>Inspecciones y Evaluaciones</h3>
+      <p>Inspecciones locativas, de seguridad y verificación del cumplimiento normativo.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-chart-line"></i>
+      <h3>Indicadores y Auditoría Interna</h3>
+      <p>Medición de indicadores y realización de auditorías internas del SG-SST.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-briefcase-medical"></i>
+      <h3>Simulacros de Emergencia</h3>
+      <p>Planeación y ejecución de simulacros con informes de mejora y participación.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-bullhorn"></i>
+      <h3>Campañas Educativas</h3>
+      <p>Diseño de actividades para promover la cultura preventiva en la organización.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-file-alt"></i>
+      <h3>Matriz de Peligros y Riesgos</h3>
+      <p>Elaboración y actualización según la metodología GTC 45.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-user-shield"></i>
+      <h3>Vigilancia de Condiciones de Trabajo</h3>
+      <p>Identificación de condiciones inseguras, reporte de actos subestándar y recomendaciones.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-clipboard-list"></i>
+      <h3>Soporte para Resolución 0312 de 2019</h3>
+      <p>Preparación documental y técnica para cumplir los estándares mínimos del SG-SST.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-users-cog"></i>
+      <h3>Acompañamiento a COPASST y CCL</h3>
+      <p>Asesoría para la correcta conformación y funcionamiento de los comités obligatorios.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-car-crash"></i>
+      <h3>PESV - Plan Estratégico de Seguridad Vial</h3>
+      <p>Asistencia en la implementación y seguimiento del PESV para empresas con vehículos.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-briefcase"></i>
+      <h3>Gestión del Riesgo Laboral</h3>
+      <p>Investigación de accidentes e incidentes, y análisis de causas raíz.</p>
+    </div>
+
+    <div class="servicio-box"><i class="fas fa-handshake"></i>
+      <h3>Acompañamiento Legal Básico</h3>
+      <p>Soporte documental y técnico ante requerimientos de ARL o MinTrabajo (sin representar legalmente).</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="paquetes">
+  <h2>Paquetes de Servicio</h2>
+  <div class="paquete">
+    <h3>🟢 Paquete Básico - $1,500,000 COP</h3>
+    <p>Implementación del SG-SST, capacitación básica y matriz de riesgos.<br>Duración: 1 mes.</p>
+  </div>
+  <div class="paquete">
+    <h3>🔵 Paquete Estándar - $3,500,000 COP</h3>
+    <p>Todo lo del básico + inspecciones mensuales y gestión documental.<br>Duración: 3 meses.</p>
+  </div>
+  <div class="paquete">
+    <h3>🔴 Paquete Premium - $6,000,000 COP</h3>
+    <p>Todo lo anterior + evaluación psicosocial y auditorías internas trimestrales.<br>Duración: 6 meses.</p>
+  </div>
+</section>
+
+
+<section id="testimonios">
+  <h2>Lo que puedes esperar de mi trabajo</h2>
+  <div class="grid-servicios">
+    <div class="servicio-box">
+      <i class="fas fa-user-check"></i>
+      <h3>Compromiso 100% con cada cliente</h3>
+      <p>Me esfuerzo por ofrecer soluciones personalizadas, prácticas y con enfoque preventivo.</p>
+    </div>
+    <div class="servicio-box">
+      <i class="fas fa-certificate"></i>
+      <h3>Actualización permanente</h3>
+      <p>Mi formación está basada en la normatividad vigente y buenas prácticas en SST.</p>
+    </div>
+    <div class="servicio-box">
+      <i class="fas fa-briefcase"></i>
+      <h3>Experiencia práctica real</h3>
+      <p>Durante mi etapa práctica implementé SG-SST y gestioné riesgos en entornos reales de trabajo.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="beneficios">
+  <h2>¿Por qué elegirnos?</h2>
+  <div class="grid-servicios">
+    <div class="servicio-box"><i class="fas fa-check-circle"></i>
+      <h3>Cumplimiento Legal Garantizado</h3>
+      <p>Nos aseguramos de que tu empresa cumpla con la normativa vigente en SST.</p>
+    </div>
+    <div class="servicio-box"><i class="fas fa-shield-alt"></i>
+      <h3>Reducción de Riesgos</h3>
+      <p>Prevenimos accidentes laborales y optimizamos la seguridad en tus procesos.</p>
+    </div>
+    <div class="servicio-box"><i class="fas fa-hand-holding-usd"></i>
+      <h3>Ahorro en Sanciones</h3>
+      <p>Evita multas y requerimientos con un SG-SST bien implementado.</p>
+    </div>
+    <div class="servicio-box"><i class="fas fa-user-cog"></i>
+      <h3>Asesoría Personalizada</h3>
+      <p>Nos adaptamos a tus necesidades, sin importar el tamaño de tu empresa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sectores">
+  <h2>Experiencia en Múltiples Sectores</h2>
+  <div class="grid-servicios">
+    <div class="servicio-box"><i class="fas fa-building"></i><h3>Oficinas y Entidades Administrativas</h3></div>
+    <div class="servicio-box"><i class="fas fa-hard-hat"></i><h3>Construcción y Obras Civiles</h3></div>
+    <div class="servicio-box"><i class="fas fa-truck"></i><h3>Transporte y Logística</h3></div>
+    <div class="servicio-box"><i class="fas fa-clinic-medical"></i><h3>Salud y Servicios Sociales</h3></div>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="grid-servicios">
+    <div class="servicio-box"><i class="fas fa-question-circle"></i>
+      <h3>¿Qué incluye el paquete estándar?</h3>
+      <p>Todo lo del básico, más gestión documental e inspecciones mensuales por 3 meses.</p>
+    </div>
+    <div class="servicio-box"><i class="fas fa-id-badge"></i>
+      <h3>¿Tienes licencia vigente?</h3>
+      <p>Sí, como Tecnólogo en SST cuento con licencia activa registrada ante el Ministerio de Salud.</p>
+    </div>
+    <div class="servicio-box"><i class="fas fa-briefcase"></i>
+      <h3>¿Trabajas con microempresas?</h3>
+      <p>¡Claro! Adaptamos nuestros servicios a micro, pequeñas y medianas empresas.</p>
+    </div>
+    <div class="servicio-box"><i class="fas fa-file-signature"></i>
+      <h3>¿Puedes firmar documentos oficiales?</h3>
+      <p>Sí, dentro del alcance legal de un Tecnólogo en SST con licencia, según la Resolución 0312 de 2019.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto-form">
+  <h2>Contáctanos</h2>
+  <form action="https://formsubmit.co/danielperea032003@gmail.com" method="POST" class="contact-info" style="max-width:600px; margin:auto;">
+    <input type="text" name="name" placeholder="Nombre" required style="width:100%;padding:10px;margin-bottom:10px;">
+    <input type="email" name="email" placeholder="Correo electrónico" required style="width:100%;padding:10px;margin-bottom:10px;">
+    <textarea name="message" placeholder="Mensaje" required style="width:100%;padding:10px;margin-bottom:10px;"></textarea>
+    <button type="submit" style="background-color:#3498db;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;">Enviar</button>
+  </form>
+</section>
+
+<section id="contacto" class="contact-info">
+  <h2>Contacto</h2>
+  <p>📞 WhatsApp: <a href="https://wa.me/573105122887" target="_blank">+57 310 5122887</a></p>
+  <p>📧 Email: <a href="mailto:danielperea032003@gmail.com">danielperea032003@gmail.com</a></p>
+</section>
+<a class="whatsapp-button" href="https://wa.me/573105122887" target="_blank" title="Contáctame por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
